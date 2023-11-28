@@ -1,0 +1,8 @@
+/* 언어 초기화 */
+@charset "UTF-8";
+
+/* 여백 초기화 */
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,input,select,fieldset,figure,form,figcaption,p,table,tr,th,td,textarea,button {
+  margin: 0;
+  padding: 0;
+}
