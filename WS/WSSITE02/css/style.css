@@ -30,8 +30,7 @@
 }
 #contents {}
 #footer {
-  height: 200px;
-  background: #d40082;
+  border-top: 1px solid #ed9400;
 }
 
 /* 컨테이너 */
@@ -44,6 +43,7 @@
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {
+  display: none;
   background: #dd94e8;
 }
 #cont_tit {
@@ -184,8 +184,11 @@
   height: 60px;
   background: url("../images/icon.png") no-repeat 0 -600px;
 }
+.tit .btn.on {
+  background-position: 0 -660px;
+}
 
-/* 배너 */
+/* 배너
 .ban {
   position: relative;
   padding: 24px 0 20px;
@@ -242,6 +245,71 @@
 }
 .ban ul li:last-child {
   text-align: right;
+}
+*/
+
+/* 슬릭 배너 */
+.ban {
+  position: relative;
+  padding: 24px 0 40px;
+}
+.ban .slick-prev {
+  position: absolute;
+  left: -60px;
+  top: 80px;
+  width: 43px;
+  height: 43px;
+  background: url("../images/icon.png") no-repeat -150px 0;
+  text-indent: -9999px;
+}
+.ban .slick-next {
+  position: absolute;
+  right: -60px;
+  top: 80px;
+  width: 43px;
+  height: 43px;
+  background: url("../images/icon.png") no-repeat -150px -43px;
+  text-indent: -9999px;
+}
+.ban .slick-prev:hover {
+  background-position: -193px 0;
+}
+.ban .slick-next:hover {
+  background-position: -193px -43px;
+}
+.ban img {
+  border: 4px solid #4d94b0;
+}
+.ban img:hover {
+  border-color: #2d0098;
+}
+.ban .slick-slide {
+  margin: 10px;
+}
+.ban .slick-dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.ban .slick-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+.ban .slick-dots li button {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #ed9400;
+  border-radius: 50%;
+}
+.ban .slick-dots li.slick-active button {
+  background: #339904;
 }
 
 /* 컨텐츠 영역 */
@@ -649,8 +717,6 @@
 .gallery {
   position: relative;
   border: 1px solid #ffcc00;
-  height: 254px;
-  overflow: hidden;
 }
 .gallery h4 {
   font-size: 14px;
@@ -665,7 +731,7 @@
   right: 5px;
 }
 .gallery .gallery_btn ul {
-  overflow: hidden;
+  
 }
 .gallery .gallery_btn ul li {
   float: left;
@@ -704,6 +770,41 @@
 .gallery .gallery_img {}
 .gallery .gallery_img img {
   width: 100%;
+}
+
+/* 슬릭 갤러리 */
+.gallery {}
+.gallery .gallery_btn button {
+  float: left;
+  margin: 1px 2px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../images/icon.png") no-repeat;
+}
+.gallery .gallery_btn .gb_icon1 {
+  background-position: -150px -120px;
+}
+.gallery .gallery_btn .gb_icon2 {
+  background-position: -150px -143px;
+}
+.gallery .gallery_btn .gb_icon3 {
+  background-position: -150px -166px;
+}
+.gallery .gallery_btn .gb_icon4 {
+  background-position: -150px -189px;
+}
+.gallery .gallery_btn .gb_icon1:hover {
+  background-position: -173px -120px;
+}
+.gallery .gallery_btn .gb_icon2:hover {
+  background-position: -173px -143px;
+}
+.gallery .gallery_btn .gb_icon3:hover {
+  background-position: -173px -166px;
+}
+.gallery .gallery_btn .gb_icon4:hover {
+  background-position: -173px -189px;
 }
 
 /* 로그인 */
@@ -787,4 +888,67 @@
 .popup ul li a {}
 .popup ul li a img {
   width: 100%;
+}
+
+/* 푸터 영역 */
+.footer {
+  padding: 25px 0;
+  text-align: center;
+}
+.footer ul {
+  margin-bottom: 20px;
+}
+.footer ul li {
+  position: relative;
+  display: inline;
+  padding: 0 7px 0 10px;
+}
+.footer ul li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: #4d9488;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer ul li:first-child::before {
+  width: 0;
+  height: 0;
+}
+.footer ul li a {
+  color: #1d48ff;
+}
+.footer ul li a:hover {
+  color: #fc499d;
+}
+.footer .w3c {
+  margin-top: 15px;
+}
+
+/* 레이어 팝업 */
+#layer {
+  display: none;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width: 700px;
+  border: 10px solid #4400f8;
+  box-shadow: 3px 3px 3px 10px rgba(255, 255, 255, 0.4);
+}
+#layer img {
+  display: block;
+  width: 100%;
+}
+#layer .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #ed9400;
+  padding: 1px 6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+#layer .close:hover {
+  font-weight: bold;
 }
