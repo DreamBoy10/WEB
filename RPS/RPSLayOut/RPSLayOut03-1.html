@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>RPSLayOut03-1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+      font-size: 40px;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    body {
+      background: #d4ffc8;
+    }
+    .header {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      background: #d90049;
+    }
+    .aside {
+      float: left;
+      width: 30%;
+      height: 900px;
+      line-height: 900px;
+      background: #558890;
+    }
+    .article1 {
+      float: left;
+      width: 70%;
+      height: 300px;
+      line-height: 300px;
+      background: #2d9488;
+    }
+    .article2 {
+      float: left;
+      width: 70%;
+      height: 300px;
+      line-height: 300px;
+      background: #ffc000;
+    }
+    .article3 {
+      float: left;
+      width: 70%;
+      height: 300px;
+      line-height: 300px;
+      background: #88d400;
+    }
+    .footer {
+      clear: both;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      background: #1edc4c;
+    }
+    
+    /* 미디어 쿼리 */
+    
+    /* 화면 너비가 0 ~ 1200px */
+    @media (max-width: 1240px) {
+      #wrap {
+        width: 100%;
+      }
+      .article1 {
+        height: 450px;
+        line-height: 450px;
+      }
+      .article2 {
+        height: 450px;
+        line-height: 450px;
+      }
+      .article3 {
+        width: 100%;
+      }
+    }
+    
+    /* 화면 너비가 0 ~ 768px */
+    @media (max-width: 768px) {
+      .aside {
+        width: 100%;
+        height: 300px;
+        line-height: 300px;
+      }
+      .article1 {
+        width: 50%;
+      }
+      .article2 {
+        width: 50%;
+      }
+    }
+    
+    /* 화면 너비가 0 ~ 480px */
+    @media (max-width: 480px) {
+      .article1 {
+        width: 100%;
+      }
+      .article2 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- wrap -->
+  <div id="wrap">
+    <header class="header">
+      header
+    </header>
+    <aside class="aside">
+      aside
+    </aside>
+    <section class="article1">
+      article1
+    </section>
+    <section class="article2">
+      article2
+    </section>
+    <section class="article3">
+      article3
+    </section>
+    <footer class="footer">
+      footer
+    </footer>
+  </div>
+  <!-- //wrap -->
+  
+</body>
+</html>

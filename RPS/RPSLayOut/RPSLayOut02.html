@@ -2,17 +2,14 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>RPSLayOut01</title>
+  <title>RPSLayOut02</title>
   <style>
     * {
       margin: 0;
       padding: 0;
     }
-    body {
-      background: #f3e5f5;
-    }
     #wrap {
-      width: 1200px;
+      width: 100%;
       margin: 0 auto;
       font-size: 40px;
       font-weight: normal;
@@ -24,66 +21,83 @@
       width: 100%;
       height: 150px;
       line-height: 150px;
-      background: #9575cd;
+      background: #81c784;
     }
     aside {
       float: left;
       width: 30%;
       height: 700px;
       line-height: 700px;
-      background: #7e57c2;
+      background: #66bb6a;
     }
     section {
       float: left;
-      width: 70%;
+      width: 40%;
       height: 700px;
       line-height: 700px;
-      background: #673ab7;
+      background: #4caf50;
+    }
+    article {
+      float: left;
+      width: 30%;
+      height: 700px;
+      line-height: 700px;
+      background: #43a047;
     }
     footer {
       clear: both;
       width: 100%;
       height: 150px;
       line-height: 150px;
-      background: #5e35b1;
+      background: #388e3c;
     }
     
     /* 미디어 쿼리 */
     
     /* 화면 너비가 0 ~ 1200px */
     @media (max-width: 1220px) {
-      #wrap {
-        width: 95%;
+      aside {
+        width: 40%;
+      }
+      section {
+        width: 60%;
+      }
+      article {
+        width: 100%;
+        height: 300px;
+        line-height: 300px;
       }
     }
     
     /* 화면 너비가 0 ~ 768px */
     @media (max-width: 768px) {
-      #wrap {
-        width: 100%;  
-      }
-    }
-    
-    /* 화면 너비가 0 ~ 480px */
-    @media (max-width: 480px) {
-      #wrap {
-        width: 100%;  
-      }
-      header {
-        height: 300px;
-        line-height: 300px;
-      }
       aside {
-        float: none;
         width: 100%;
         height: 300px;
         line-height: 300px;
       }
       section {
-        float: none;
         width: 100%;
         height: 300px;
         line-height: 300px;
+      }
+    }
+    
+    /* 화면 너비가 0 ~ 480px */
+    @media (max-width: 480px) {
+      header {
+        height: 300px;
+        line-height: 300px;
+      }
+      aside {
+        width: 100%;
+        height: 200px;
+        line-height: 200px;
+      }
+      section {
+        width: 100%;
+        height: 200px;
+        line-height: 200px;
       }
     }
   </style>
@@ -101,6 +115,9 @@
     <section>
       section
     </section>
+    <article>
+      article
+    </article>
     <footer>
       footer
     </footer>
