@@ -24,16 +24,11 @@
 /* 전체 레이아웃 */
 #wrap {}
 #header {
-  width: 100%;
   height: 325px;
   background: url("../img/header_bg.jpg") center top repeat-x;
 }
 #contents {}
-#footer {
-  width: 100%;
-  height: 200px;
-  background: #333333;
-}
+#footer {}
 
 /* 컨텐츠 레이아웃 */
 #contents_nav {
@@ -486,6 +481,7 @@
   color: #ff0000;
   font-weight: bold;
   padding-bottom: 7px;
+  margin-top: -5px;
 }
 .line01 ul {
   overflow: hidden;
@@ -530,10 +526,68 @@
 .line01 ul li a strong {
   display: inline-block;
   font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding-top: 3px;
+  width: 70px;
+  margin-top: 5px;
+}
+
+/* 갤러리02(영역 깨짐 방지법) */
+.exp01 {}
+.exp01 h4 {
+  font-size: 16px;
+  color: #ff0000;
+  font-weight: bold;
+  padding-bottom: 7px;
+  margin-top: -5px;
+}
+.exp01 ul {
+  overflow: hidden;
+}
+.exp01 ul li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+/* last-child는 ie9부터 사용 가능 */
+.exp01 ul li:last-child {
+  margin-right: 0;
+}
+.exp01 ul li.last {
+  margin-right: 0;
+}
+.exp01 ul li a {}
+.exp01 ul li a span {
+  position: relative;
+  display: block;
+  width: 93px;
+  height: 93px;
+}
+.exp01 ul li a span img {
+  width: 100%;
+}
+.exp01 ul li a span em {
+  visibility: hidden;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.exp01 ul li a span:hover em {
+  visibility: visible;
+}
+.exp01 ul li a strong {
+  display: inline-block;
+  font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 70px;
+  margin-top: 5px;
 }
 
