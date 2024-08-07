@@ -426,3 +426,68 @@
   top: 0;
 }
 
+/* 게시판3(설명 게시판) */
+.exp {
+  position: relative;
+}
+.exp h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul {}
+.exp ul li {
+  position: relative;
+  padding: 8px 0 14px 60px;
+}
+.exp ul li a {}
+.exp ul li a img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #0093bd;
+}
+.exp ul li a strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul li a span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp a {}
+.exp a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+/* 갤러리01(IR 효과) */
+.ir01 {}
+.ir01 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.ir01 ul {}
+.ir01 ul li {}
+.ir01 ul li a {}
+.ir01 ul li a span {}
+.ir01 ul li a span img {}
+.ir01 ul li a span em {}
+.ir01 ul li a strong {}
+
