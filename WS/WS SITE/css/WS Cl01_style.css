@@ -46,9 +46,7 @@
   background: #dceff7;
 }
 #contents_contents {
-  width: 100%;
-  height: 200px;
-  background: #777777;
+  background: #f6fdff;
 }
 
 /* 컨테이너 */
@@ -258,5 +256,95 @@
 }
 .banner ul li a img:hover {
   border-color: #98bcdc;
+}
+
+/* 컨텐츠 */
+.contents {
+  overflow: hidden;
+  padding-top: 30px;
+}
+.contents .column {
+  position: relative;
+  float: left;
+  width: 289px;
+  height: 363px;
+  margin: 0 30px 30px 0;
+  padding-right: 30px;
+}
+.contents .column.col1 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col2 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col3 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.contents .column.col4 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col5 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col6 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.contents .column.col1 .ico_img {
+  background-position: 0 -240px;
+}
+.contents .column.col2 .ico_img {
+  background-position: 0 -300px;
+}
+.contents .column.col3 .ico_img {
+  background-position: 0 -360px;
+}
+.contents .column.col4 .ico_img {
+  background-position: 0 -420px;
+}
+.contents .column.col5 .ico_img {
+  background-position: 0 -480px;
+}
+.contents .column.col6 .ico_img {
+  background-position: 0 -540px;
+}
+.contents .column.col1 .ico_img:hover {
+  background-position: -60px -240px;
+}
+.contents .column.col2 .ico_img:hover {
+  background-position: -60px -300px;
+}
+.contents .column.col3 .ico_img:hover {
+  background-position: -60px -360px;
+}
+.contents .column.col4 .ico_img:hover {
+  background-position: -60px -420px;
+}
+.contents .column.col5 .ico_img:hover {
+  background-position: -60px -480px;
+}
+.contents .column.col6 .ico_img:hover {
+  background-position: -60px -540px;
+}
+.contents .column .ico_img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon.png") no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.contents .column .ico_title {
+  padding-left: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c94c4;
+}
+.contents .column .ico_desc {
+  padding-left: 70px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 15px;
 }
 

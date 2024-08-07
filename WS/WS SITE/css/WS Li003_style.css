@@ -350,5 +350,132 @@
   padding-bottom: 15px;
   border-bottom: 1px solid #fc4900;
   font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* 게시판1(레이아웃1) */
+.layout1 {
+  position: relative;
+}
+.layout1 h4 {
+  font-size: 16px;
+  color: #ff0000;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.layout1 ul {}
+.layout1 ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 270px;
+  background: url("../img/dot.gif") no-repeat 0 8px;
+  padding-left: 8px;
+}
+.layout1 ul li a {
+  font-size: 12px;
+  line-height: 20px;
+}
+.layout1 a {}
+.layout1 a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+/* 게시판2(레이아웃2) */
+.layout2 {
+  position: relative;
+  margin-top: 15px;
+}
+.layout2 h4 {
+  font-size: 16px;
+  color: #ff0000;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.layout2 ul {}
+.layout2 ul li {
+  overflow: hidden;
+  background: url("../img/dot.gif") no-repeat 0 8px;
+  padding-left: 8px;
+}
+.layout2 ul li a {
+  float: left;
+  width: 65%;
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.layout2 ul li span {
+  float: right;
+  width: 30%;
+  text-align: right;
+  font-size: 12px;
+}
+.layout2 a {}
+.layout2 a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") no-repeat -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 게시판3(설명 게시판) */
+.exp {
+  position: relative;
+}
+.exp h4 {
+  font-size: 16px;
+  color: #ff0000;
+  padding-bottom: 7px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul {}
+.exp ul li {
+  position: relative;
+  padding: 8px 0 14px 60px;
+}
+.exp ul li a {}
+.exp ul li a img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ff0000;
+}
+.exp ul li a strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul li a span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp a {}
+.exp a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 3px;
 }
 
