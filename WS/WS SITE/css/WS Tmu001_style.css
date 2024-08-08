@@ -591,3 +591,61 @@
   margin-top: 5px;
 }
 
+/* 공지사항1(탭 메뉴) */
+.notice01 {
+  position: relative;
+  border: 1px solid #ffcc00;
+  height: 105px;
+  padding: 8px;
+}
+.notice01 h4 {}
+.notice01 ul {
+  overflow: hidden;
+  border-bottom: 1px solid #ffcc00;
+}
+.notice01 ul li {
+  float: left;
+  border: 1px solid #ffcc00;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.notice01 ul li.active {}
+.notice01 ul li a {
+  display: block;
+  padding: 5px 10px;
+}
+.notice01 ul li.active {
+  background: #df339e;
+  font-weight: bold;
+}
+.notice01 ul li.active a {
+  color: #ffffff;
+}
+.notice01 ul li ul {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 270px;
+  border: 0;
+}
+.notice01 ul li ul li {
+  float: none;
+  border: 0;
+  background: url("../img/dot.gif") no-repeat 9px 8px;
+  padding-left: 18px;
+}
+.notice01 ul li ul li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 0 3px 0;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: normal;
+}
+.notice01 ul li.active ul li a {
+  color: #000000;
+}
+
