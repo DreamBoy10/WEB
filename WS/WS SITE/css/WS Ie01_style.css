@@ -1,0 +1,787 @@
+@charset "UTF-8";
+
+/* 스킵 메뉴 */
+#skip {
+  position: relative;
+}
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  width: 180px;
+  border: 1px solid #666666;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+  text-align: center;
+  line-height: 30px;
+}
+#skip a:active, #skip a:focus {
+  top: 0;
+}
+
+/* 전체 레이아웃 */
+#wrap {}
+#header {
+  width: 100%;
+  height: 325px;
+  background: url("../img/header_bg.jpg") center top repeat-x;
+}
+#contents {}
+#footer {}
+
+/* 컨텐츠 레이아웃 */
+#contents_nav {
+  background: #f6fdff;
+}
+#contents_title {
+  background: #eaf7fd;
+}
+#contents_banner {
+  background: #dceff7;
+}
+#contents_contents {
+  background: #f6fdff;
+}
+
+/* 컨테이너 */
+.container {
+  width: 990px;
+  height: inherit;
+  margin: 0 auto;
+  /* background: rgba(255, 255, 255, 0.3); */
+}
+
+/* 헤더 */
+.header {}
+.header .header-menu {
+  text-align: right;
+}
+.header .header-menu a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px 0 10px 13px;
+}
+.header .header-menu a:hover {
+  color: #666666;
+  font-weight: bold;
+}
+.header .header-title {
+  text-align: center;
+}
+.header .header-title h1 {
+  display: inline-block;
+  background: #4aa8d4;
+  font-size: 28px;
+  padding: 5px 20px 6px 20px;
+  color: #ffffff;
+  margin-top: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.header .header-title a {
+  display: inline-block;
+  background: #2698cb;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 5px 20px 6px 20px;
+  margin-top: -5px;
+  font-weight: 400;
+}
+.header .header-icon {
+  text-align: center;
+  margin-top: 30px;
+}
+.header .header-icon a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon.png");
+  margin: 0 3px;
+}
+.header .header-icon a.icon1 {
+  background-position: 0 0;
+}
+.header .header-icon a.icon2 {
+  background-position: 0 -60px;
+}
+.header .header-icon a.icon3 {
+  background-position: 0 -120px;
+}
+.header .header-icon a.icon4 {
+  background-position: 0 -180px;
+}
+.header .header-icon a.icon1:hover {
+  background-position: -60px 0;
+}
+.header .header-icon a.icon2:hover {
+  background-position: -60px -60px;
+}
+.header .header-icon a.icon3:hover {
+  background-position: -60px -120px;
+}
+.header .header-icon a.icon4:hover {
+  background-position: -60px -180px;
+}
+
+/* 전체 메뉴 */
+.nav {
+  overflow: hidden;
+  padding: 30px 0;
+}
+.nav > div {
+  float: left;
+  width: 40%;
+}
+.nav > div.last {
+  width: 20%;
+}
+/* last-child는 ie9부터 사용 가능 */
+.nav > div:last-child {
+  width: 20%;
+}
+.nav > div h3 {
+  font-size: 18px;
+  color: #25a2d0;
+  margin-bottom: 4px;
+}
+.nav > div ol {
+  overflow: hidden;
+}
+.nav > div ol li {
+  float: left;
+  width: 50%;
+}
+.nav > div ol.last li {
+  width: 100%;
+}
+/* last-child는 ie9부터 사용 가능 */
+.nav > div:last-child ol li {
+  width: 100%;
+}
+.nav > div ol li a {
+  font-weight: 400;
+  color: #de94ff;
+}
+.nav > div ol li a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* 타이틀 */
+.title {
+  position: relative;
+}
+.title h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color: #2c94c4;
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: bold;
+}
+.title .btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon.png") no-repeat 0 -600px;
+}
+
+/* 배너 */
+.banner {
+  position: relative;
+  padding: 24px 0 20px;
+}
+.banner a.prev {
+  position: absolute;
+  left: -80px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url("../img/icon.png") no-repeat -150px 0;
+}
+.banner a.next {
+  position: absolute;
+  right: -80px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url("../img/icon.png") no-repeat -150px -43px;
+}
+.banner a.prev:hover {
+  background-position: -193px 0;
+}
+.banner a.next:hover {
+  background-position: -193px -43px;
+}
+.banner ul {
+  overflow: hidden;
+}
+.banner ul li {
+  float: left;
+  width: 330px;
+}
+.banner ul li.ban_img1 {
+  text-align: left;
+}
+.banner ul li.ban_img2 {
+  text-align: center;
+}
+.banner ul li.ban_img3 {
+  text-align: right;
+}
+/* nth-child는 ie9부터 사용 가능 */
+.banner ul li:nth-child(1) {
+  text-align: left;
+}
+/* nth-child는 ie9부터 사용 가능 */
+.banner ul li:nth-child(2) {
+  text-align: center;
+}
+/* last-child는 ie9부터 사용 가능 */
+.banner ul li:last-child {
+  text-align: right;
+}
+.banner ul li a {}
+.banner ul li a img {
+  border: 4px solid #dcdcdc;
+}
+.banner ul li a img:hover {
+  border-color: #98bcdc;
+}
+
+/* 컨텐츠 */
+.contents {
+  overflow: hidden;
+  padding-top: 30px;
+}
+.contents .column {
+  position: relative;
+  float: left;
+  width: 289px;
+  height: 363px;
+  margin: 0 30px 30px 0;
+  padding-right: 30px;
+}
+.contents .column.col1 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col2 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col3 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.contents .column.col4 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col5 {
+  border-right: 1px solid #c8c8c8;
+}
+.contents .column.col6 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.contents .column.col1 .ico_img {
+  background-position: 0 -240px;
+}
+.contents .column.col2 .ico_img {
+  background-position: 0 -300px;
+}
+.contents .column.col3 .ico_img {
+  background-position: 0 -360px;
+}
+.contents .column.col4 .ico_img {
+  background-position: 0 -420px;
+}
+.contents .column.col5 .ico_img {
+  background-position: 0 -480px;
+}
+.contents .column.col6 .ico_img {
+  background-position: 0 -540px;
+}
+.contents .column.col1 .ico_img:hover {
+  background-position: -60px -240px;
+}
+.contents .column.col2 .ico_img:hover {
+  background-position: -60px -300px;
+}
+.contents .column.col3 .ico_img:hover {
+  background-position: -60px -360px;
+}
+.contents .column.col4 .ico_img:hover {
+  background-position: -60px -420px;
+}
+.contents .column.col5 .ico_img:hover {
+  background-position: -60px -480px;
+}
+.contents .column.col6 .ico_img:hover {
+  background-position: -60px -540px;
+}
+.contents .column .ico_img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon.png") no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.contents .column .ico_title {
+  padding-left: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c94c4;
+}
+.contents .column .ico_desc {
+  padding-left: 70px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* 게시판1(레이아웃1) */
+.layout1 {
+  position: relative;
+}
+.layout1 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.layout1 ul {}
+.layout1 ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: url("../img/dot.gif") no-repeat 0 8px;
+  padding-left: 8px;
+}
+.layout1 ul li a {
+  font-size: 12px;
+  line-height: 20px;
+}
+.layout1 a {
+  font-size: 14px;
+}
+.layout1 a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 게시판(레이아웃2) */
+.layout2 {
+  position: relative;
+  margin-top: 15px;
+}
+.layout2 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.layout2 ul {}
+.layout2 ul li {
+  overflow: hidden;
+  background: url("../img/dot.gif") no-repeat 0 8px;
+  padding-left: 8px;
+}
+.layout2 ul li a {
+  float: left;
+  width: 65%;
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.layout2 ul li span {
+  float: right;
+  width: 30%;
+  text-align: right;
+  font-size: 12px;
+}
+.layout2 a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 게시판3(설명 게시판) */
+.exp {
+  position: relative;
+}
+.exp h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul {}
+.exp ul li {
+  position: relative;
+  padding: 8px 0 14px 60px;
+}
+.exp ul li a {}
+.exp ul li a img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #0093bd;
+}
+.exp ul li a strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp ul li a span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.exp a {}
+.exp a.more {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon.png") -150px -90px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+/* 갤러리01(IR 효과) */
+.ir01 {}
+.ir01 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.ir01 ul {
+  overflow: hidden;
+}
+.ir01 ul li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+.ir01 ul li.last {
+  margin-right: 0;
+}
+/* last-child는 ie9부터 사용 가능 */
+.ir01 ul li:last-child {
+  margin-right: 0;
+}
+.ir01 ul li a {}
+.ir01 ul li a span {
+  display: block;
+  width: 93px;
+  height: 93px;
+  line-height: 93px;
+  position: relative;
+}
+.ir01 ul li a span img {
+  width: 100%;
+}
+.ir01 ul li a span em {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.ir01 ul li a span:hover em {
+  visibility: visible;
+}
+.ir01 ul li a strong {
+  display: inline-block;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+/* 갤러리02(이미지를 표현하는 방법) */
+.exp01 {}
+.exp01 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.exp01 ul {
+  overflow: hidden;
+}
+.exp01 ul li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+.exp01 ul li.last {
+  margin-right: 0;
+}
+/* last-child는 ie9부터 사용 가능 */
+.exp01 ul li:last-child {
+  margin-right: 0;
+}
+.exp01 ul li a {}
+.exp01 ul li a span {
+  position: relative;
+  display: block;
+  width: 93px;
+  height: 93px;
+}
+.exp01 ul li a span img {
+  width: 100%;
+}
+.exp01 ul li a span em {
+  visibility: hidden;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.exp01 ul li a span:hover em {
+  visibility: visible;
+}
+.exp01 ul li a strong {
+  display: inline-block;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70px;
+  margin-top: 5px;
+}
+
+/* 공지사항1(탭 메뉴) */
+.notice01 {
+  position: relative;
+  border: 1px solid #cccccc;
+  padding: 8px;
+  height: 105px;
+}
+.notice01 ul {
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+}
+.notice01 ul li {
+  float: left;
+  border: 1px solid #cccccc;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.notice01 ul li a {
+  display: block;
+  padding: 5px 10px;
+}
+.notice01 ul li ul {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 270px;
+  border: 0;
+}
+.notice01 ul li ul li {
+  float: none;
+  border: 0;
+  background: url("../img/dot.gif") no-repeat 9px 8px;
+  padding-left: 18px;
+}
+.notice01 ul li.active {
+  background: #2c94c4;
+}
+.notice01 ul li.active a {
+  color: #ffffff;
+}
+.notice01 ul li ul li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 0 3px 0;
+  line-height: 23px;
+}
+.notice01 ul li.active ul li a {
+  color: #333333;
+}
+
+/* 게시판4(한줄 효과 설명 페이지) */
+.notice02 {
+  position: relative;
+  border: 1px solid #cccccc;
+}
+.notice02 h4 {
+  font-size: 14px;
+  color: #0093bd;
+  border-bottom: 1px solid #cccccc;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+.notice02 h4 em {
+  color: #cf3292;
+}
+.notice02 ul {
+  padding: 10px;
+}
+.notice02 ul li {
+  overflow: hidden;
+  background: url("../img/dot.gif") no-repeat 0 8px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+}
+.notice02 ul li a {
+  float: left;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 22px;
+}
+.notice02 ul li a:hover {
+  color: #000000;
+}
+.notice02 ul li span {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+.notice02 a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80px;
+}
+.notice02 a.more {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+}
+.notice02 a.more:hover {
+  color: #0093bd;
+  font-weight: 700;
+}
+
+/* 갤러리(이미지 슬라이드) */
+.is01 {
+  position: relative;
+  border: 1px solid #cccccc;
+  height: 254px;
+  overflow: hidden;
+}
+.is01 h4 {
+  font-size: 14px;
+  color: #0093bd;
+  border-bottom: 1px solid #cccccc;
+  font-weight: bold;
+  padding: 10px 0 8px 11px;
+}
+.is01 .is01_btn {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+.is01 .is01_btn ul {
+  overflow: hidden;
+}
+.is01 .is01_btn ul li {
+  float: left;
+  margin: 1px 2px;
+}
+.is01 .is01_btn ul li.is_icon01 {}
+.is01 .is01_btn ul li.is_icon02 {}
+.is01 .is01_btn ul li.is_icon03 {}
+.is01 .is01_btn ul li.is_icon04 {}
+.is01 .is01_btn ul li a {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon.png") no-repeat;
+}
+.is01 .is01_btn ul li.is_icon01 a {
+  background-position: -150px -120px;
+}
+.is01 .is01_btn ul li.is_icon02 a {
+  background-position: -150px -143px;
+}
+.is01 .is01_btn ul li.is_icon03 a {
+  background-position: -150px -166px;
+}
+.is01 .is01_btn ul li.is_icon04 a {
+  background-position: -150px -189px;
+}
+.is01 .is01_btn ul li.is_icon01 a:hover {
+  background-position: -173px -120px;
+}
+.is01 .is01_btn ul li.is_icon02 a:hover {
+  background-position: -173px -143px;
+}
+.is01 .is01_btn ul li.is_icon03 a:hover {
+  background-position: -173px -166px;
+}
+.is01 .is01_btn ul li.is_icon04 a:hover {
+  background-position: -173px -189px;
+}
+.is01 .is01_img {}
+.is01 .is01_img img {
+  width: 100%;
+}
+
+/* 중요한 용어설명 */
+.ie01 {}
+.ie01 h4 {
+  font-size: 16px;
+  color: #0093bd;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.ie01 ul {
+  overflow: hidden;
+}
+.ie01 ul li {
+  float: left;
+}
+.ie01 ul li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 270px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.ie01 ul li a:hover {
+  color: #000000;
+}
+
