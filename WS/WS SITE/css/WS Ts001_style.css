@@ -190,6 +190,9 @@
   height: 60px;
   background: url("../img/icon.png") no-repeat 0 -600px;
 }
+.title .btn.on {
+  background-position: 0 -660px;
+}
 
 /* 배너 */
 .banner {
